@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 # The final standardized dataset and the validated training interactions are loaded.
-d1 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'final_db_standardized.txt', sep = '\t', low_memory = False))
-d2 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
+d1 = pd.DataFrame(pd.read_csv('C:\Users'+'\\'+'final_db_standardized.txt', sep = '\t', low_memory = False))
+d2 = pd.DataFrame(pd.read_csv('C:\Users'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
 
 # Get rid of the ENCODE in Main Accession:
 d1 = d1[d1['Main Accession'] != 'ENCODE']
