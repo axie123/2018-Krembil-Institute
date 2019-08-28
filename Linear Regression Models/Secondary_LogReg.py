@@ -1,3 +1,5 @@
+# This code is created and modified by Andy Xie and Tomas Tokar at Krembil in 2017.
+
 import numpy as np
 import pandas as pd
 from sklearn import linear_model
@@ -5,6 +7,7 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
+# The final standardized dataset and the validated training interactions are loaded.
 d1 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'final_db_standardized.txt', sep = '\t', low_memory = False))
 d2 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
 
@@ -32,23 +35,28 @@ target_table['Validatable'] = (target_table['Factor'].isin(d2.TF)) & (target_tab
 final_wide = pd.concat([target_table,taken_wide_f], axis = 1)
 ml_file = final_wide[final_wide.Validatable == 1]
 
-#ml_file = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI\ml_ready.txt', sep = '\t', low_memory = False))
-#d2 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'assist.txt', sep = '\t', low_memory = False))
-
+# Identifying the dependent and independent variables. 
 X = ml_file.iloc[:,3:]
 y = ml_file.Validated
 
-binr = preprocessing.LabelBinarizer() #//
+# The multi-class labels are converted into appropriate binary labels. 
+binr = preprocessing.LabelBinarizer() 
 binr.fit(y)
-y = binr.transform(y) #//
+y = binr.transform(y) 
 
+# Spliting the training and testing data.
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
 # Logistical Regression
-lr = linear_model.LogisticRegression() #//
+lr = linear_model.LogisticRegression() 
 
+# Fitting the training set.
 lr.fit(X_train,y_train)
-prb = lr.predict_proba(X_test) #//
+
+# Prodiciting the probability of the test set having it's current state.
+prb = lr.predict_proba(X_test) 
+
+# Putting this into a datatable.
 pt = pd.DataFrame({'TF_Target' : X_test.index, 'proba' : prb[:,1], 'truth' : y_test[:,0]})
 pt = pt.sort_values(by = 'proba', ascending = False) #//
 
@@ -57,6 +65,7 @@ idx = np.linspace(1, np.log10(pt.shape[0]), 20) #//
 f1_score = list()
 for i in idx:
     spt = pt.head(np.int(10**i))
+    # False negatives
     fn = np.sum(~d2['Factor / Gene Name'].isin(spt.TF_Target))   # False negative rate
     # Precision and Recall
     prc = np.mean(spt.truth == 1)
@@ -97,9 +106,3 @@ plt.xlabel('N [log10]')
 plt.ylabel('F1 score')
 plt.show()
 
-'''
-del(ml_file['Unnamed: 0'])
-d2['Factor / Gene Name'] = d2['TF'] + ' / ' + d2['Target']
-ml_file = ml_file.set_index('Factor / Gene Name')
-ml_file.drop(['Factor', 'Gene Name'],axis = 1,inplace = True)
-'''
