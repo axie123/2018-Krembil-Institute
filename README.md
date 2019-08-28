@@ -17,7 +17,9 @@ This repository has three branches:
 
 ### master
   
-This branch contains the linear and tree-based models, as well as the files that contain the data used for the models. The proof-of-concept graphs produced which plotted the models with the experiments are also given in a .zip file. 
+This branch contains the linear and tree-based models, as well as the files that contain the data used for the models. The proof-of-concept graphs produced which plotted the models with the experiments are also given in a .zip file. The data originally comes from ChIPBase v2.0: http://rna.sysu.edu.cn/chipbase/index.php
+
+The green and black plots on the graphs represent clusters of wet lab experiments, and the dashed line is the computer-generated model.
 
 The papers used as background research is also given the 'source' file.
 
