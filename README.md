@@ -11,4 +11,4 @@ The lab work was done with Python v2.7. The Numpy, Pandas, and Scikit-Learn libr
 
 This repository has three branches:
 
-<h1> master <h1>
+<h3> master <h3>
