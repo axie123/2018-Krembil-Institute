@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 # This part of the code prepares the datasets for actual machine learning.
 
 # This file contains the main content for machine learning
-ml_file = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Software\Multi-Factor Analysis\ml_ready.txt', sep = '\t', low_memory = False))
+ml_file = pd.DataFrame(pd.read_csv('C:\Users\ml_ready.txt', sep = '\t', low_memory = False))
 # This file contains the all the recorded interactions that the target genes have with their TFs.
-d2 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
+d2 = pd.DataFrame(pd.read_csv('C:\Users'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
 del(ml_file['Unnamed: 0'])
 d2['Factor / Gene Name'] = d2['TF'] + ' / ' + d2['Target'] 
 ml_file = ml_file.set_index('Factor / Gene Name')
