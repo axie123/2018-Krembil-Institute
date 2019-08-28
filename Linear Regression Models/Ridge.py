@@ -6,6 +6,7 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
+# Imports the main processed file and the validated interactions file. Trims them as well.
 ml_file = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Software\Multi-Factor Analysis\ml_ready.txt', sep = '\t', low_memory = False))
 d2 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
 del(ml_file['Unnamed: 0'])
@@ -13,25 +14,32 @@ d2['Factor / Gene Name'] = d2['TF'] + ' / ' + d2['Target']
 ml_file = ml_file.set_index('Factor / Gene Name')
 ml_file.drop(['Factor', 'Gene Name'],axis = 1,inplace = True)
 
+# Dividing the dependent and independent variables.
 X = ml_file.iloc[:,2:]
 y = ml_file.Verified
 
-binr = preprocessing.LabelBinarizer() #//
+# Turning multi-label data into binary data.
+binr = preprocessing.LabelBinarizer() 
 binr.fit(y)
-y = binr.transform(y) #//
+y = binr.transform(y) 
 
+# Spliting the training and testing set.
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.2)
 
+# Setting up the parameters of the ridge regression.
 ridge = Ridge(alpha = 0.000001, normalize = True)
 ridge.fit(X_train,y_train)
 ridge_pred = ridge.predict(X_test)
+
+# Placing my predicted data into a table.
 pt = pd.DataFrame({'TF_Target' : X_test.index, 'ridge_pred' : ridge_pred[:,0], 'truth' : y_test[:,0]})
 pt = pt.sort_values(by = 'ridge_pred', ascending = False) #//
 
-idx = np.linspace(1, np.log10(pt.shape[0]), 20) #//
+idx = np.linspace(1, np.log10(pt.shape[0]), 20) 
 f1_score = list()
 for i in idx:
     spt = pt.head(np.int(10**i))
+    # Using the d2 data to predict false negative rate.
     fn = np.sum(~d2['Factor / Gene Name'].isin(spt.TF_Target))   # False negative rate
     # Precision and Recall
     prc = np.mean(spt.truth == 1)
