@@ -1,0 +1,270 @@
+ABMBs	1052	-	-	
+BPE	640	-	-	
+foreskin	4255	-	-	
+GM2588	17310	-	-	
+GM2630	16384	-	-	
+HPCs	9811	-	-	conflicting names
+MCF11	5783	-	-	
+MCF8	4842	-	-	
+metastasis-T1	2479	-	-	
+metastasis-T3	26441	-	-	
+metastasis-T4	2953	-	-	
+MRG	424	-	-	
+MS1	16934	-	-	
+NE	3430	-	-	
+PBDE	4896	-	-	
+PBDEFetal	388	-	-	
+ProEs	19370	-	-	
+Adipocytes	11493		Adipocytes	
+hASC	32811		adipose-derived stromal cells	
+H295R	8286		Adrenal gland cancer	
+H295R/TR	1335	H295R	Adrenal gland cancer	TREATED
+HAc	48845		adrenocortical carcinoma	"NOT SURE ABOUT ASSIGNMENT, WRONG NAME"
+NHDF-Ad	12214		adult dermal fibroblasts	
+AoAF	53611		aortic adventitial fibroblast	
+NH-A	7311		Astrocytes	
+HA-sp	45544		Astrocytes	
+P493-6	29045		B-cell line	
+CAL-1	3326		Blastic plasmacytoid dendritic cell neoplasm	
+blood lymphocyte	3320		blood lymphocyte	
+GM06990	67772		blood lymphocyte	
+GM06993 and GM11992	5537		blood lymphocyte	
+GM08714	73		blood lymphocyte	
+GM10847	27008		blood lymphocyte	
+GM10855	9513		blood lymphocyte	
+GM10861	16453		blood lymphocyte	
+GM11994	284		blood lymphocyte	
+GM12801	13326		blood lymphocyte	
+GM12864	81995		blood lymphocyte	
+GM12865	77151		blood lymphocyte	
+GM12866	53705		blood lymphocyte	
+GM12867	51828		blood lymphocyte	
+GM12868	47731		blood lymphocyte	
+GM12869	52185		blood lymphocyte	
+GM12870	44642		blood lymphocyte	
+GM12871	61370		blood lymphocyte	
+GM12872	79933		blood lymphocyte	
+GM12873	90879		blood lymphocyte	
+GM12874	57909		blood lymphocyte	
+GM12875	55673		blood lymphocyte	
+GM12878	829500		blood lymphocyte	
+GM12890	15478		blood lymphocyte	
+GM12891	84494		blood lymphocyte	
+GM12892	60572		blood lymphocyte	
+GM15510	37467		blood lymphocyte	
+GM18486	13729		blood lymphocyte	
+GM18505	24985		blood lymphocyte	
+GM18526	22676		blood lymphocyte	
+GM18951	40465		blood lymphocyte	
+GM19099	49452		blood lymphocyte	
+GM19193	31091		blood lymphocyte	
+GM19238	16761		blood lymphocyte	
+GM19239	16693		blood lymphocyte	
+GM19240	16411		blood lymphocyte	
+GM2610	15632		blood lymphocyte	
+SU-DHL4	3488		B-lymphocyte	
+HBMEC	64071		brain blood vessel	
+PFSK-1	26027		Brain tumor	
+HME	893		breast	"NOT SURE ABOUT ASSIGNMENT, WRONG NAME"
+HMLER	16341		breast	SUBTYPE of HMEC
+HMEC	70048		breast epithelial	
+HMF	48812		breast fybroblast	
+HS578T	3122		Breast tumor	
+SUM185	34324		Breast tumor	
+T-47D	110694	T47D	Breast tumor	
+T47D-MTVL	19098	T47D	Breast tumor	TREATED
+TAMR	7984		Breast tumor	SUBTYPE OF MCF7
+ZR75	7718		Breast tumor	"NOT SURE ABOUT ASSIGNMENT, WRONG NAME"
+ZR751	227	ZR75-1	Breast tumor	
+BPLER	559		Breast tumor	
+breast carcinoma	14529		Breast tumor	
+Breast tumor	521		Breast tumor	
+BT	88030		Breast tumor	"NOT SURE ABOUT ASSIGNMENT, WRONG NAME"
+BT20	1203		Breast tumor	
+BT474	6651		Breast tumor	
+BT549	3483		Breast tumor	
+C4-12/Flag.ER?	881	C4-12	Breast tumor	SUBTYPE OF MCF7
+HCC-1428	228		Breast tumor	
+MCF10A	920		Breast tumor	
+MCF10A-Er-Src	162102	MCF10A	Breast tumor	TREATED
+MCF7	474023		Breast tumor	
+MCF9	7104		Breast tumor	
+MDA-MB-231	68815		Breast tumor	
+MDA-MB-453	12077		Breast tumor	
+MDA-MD-231	1029	MDA-MB-231	Breast tumor	
+SKBR3	428		Breast tumor	
+BJAB	3810		Burkitt's lymphoma	
+BL41	4162		Burkitt's lymphoma	
+ATCC CRL-1432	1068	Namalwa	Burkitt's lymphoma	
+Namalwa	1753		Burkitt's lymphoma	
+HeLa	19182		cervix cancer	
+HeLa S3	339340	HeLa	cervix cancer	SUBTYPE OF HeLa
+SW1353	101		Chondrosarcoma	
+HCPEpiC	66055		choroid plexus	
+K562	1121664		chronic myeloid leukemia	
+Caco-2	146664	Caco-2	Colorectal cancer	
+colon tumor	332		Colorectal cancer	
+DLD1	1402		Colorectal cancer	
+GP5d	37806		Colorectal cancer	
+HCT116	177995		Colorectal cancer	
+HCT15	338		Colorectal cancer	
+HT29	343		Colorectal cancer	
+LoVo	830309		Colorectal cancer	
+LS174T	4325		Colorectal cancer	
+LS180	12085		Colorectal cancer	
+SW480	2003		Colorectal cancer	
+SW620	74		Colorectal cancer	
+HCASMC	3626		Coronary artery	
+NCCIT	9209		embryonal carcinoma	
+NT2/D1	15949		embryonal carcinoma	
+HEK293	62510		embryonic kidney	
+HEK293T	21782	HEK293	embryonic kidney	TREATED
+HEK293-T-REx	12519	HEK293	embryonic kidney	TREATED
+WI 38	10895	WI-38	embryonic lung fibroblast	
+WI-38	25272		embryonic lung fibroblast	
+WA09	35304		Embryonic stem cell	
+H1	459908		Embryonic stem cell	
+HUES64	643104		Embryonic stem cell	
+hESCs	1347		embryonic stem cell 	
+ECC-1	162959		Endometrial adenocarcinoma	
+ECFCs	416		Endothelial colony forming cells	
+HEEpiC	48963		esophageal	
+KYSE70	3807		Esophageal carcinoma	
+diploid fibroblast	42580		Fibroblast	
+fibroblasts	10332		Fibroblast	
+GM06170-GM00011	249		Fibroblast	
+GM2255	16549	GM02255	fibroblast	
+HFF	24686		Fibroblast foreskin	
+HFF-Myc	42679	HFF	Fibroblast foreskin	TREATED
+AG09319	58958		Fibroblast gum	
+HCFaa	26964		fibroblast heart	
+AG04450	51874		Fibroblast lung	
+IMR90	62357		fibroblast lung	
+AG04449	70081		Fibroblast skin	
+AG09309	47074		Fibroblast skin	
+AG10803	53943		Fibroblast skin	
+BJ	71945		Fibroblast skin	
+BJ fibroblasts	194	BJ	Fibroblast skin	
+hDFs	976		Fibroblast skin	
+AGS	22141		gastric carcinoma	
+YCC3	10686		gastric carcinoma	
+KATOIII	23525		gastric carcinoma	
+SNU216	1706		gastric carcinoma	
+HuG-1	850		gastric carcinoma	
+MKN28	4200		gastric carcinoma	
+GBM1A-B	12777	GBM1A	Glioblastoma	
+U87	2451		Glioblastoma	
+H1 neurons	15952		H1 neurons	
+HCM	49432		heart	
+KB	23272		HeLa contaminant	
+CD14+ M	9829		hematopoietic cell	
+CD20+	12023		hematopoietic cell	
+CD34	3600	CD34+	hematopoietic cell	
+CD34+	15098		hematopoietic cell	
+CD36	33266	CD36+	hematopoietic cell	
+CD4+ T	7537		hematopoietic cell	
+Erythroid	32609		hematopoietic cell	
+HepG2	571500	HepG2	hepatocellular carcinoma	
+HuH7	197		hepatocellular carcinoma	
+L428-PAX5	2572		Hodgkin lymphoma	TREATED
+LX2	776		Human Hepatic Stellate	
+Induced pluripotent stem cells	16182		Induced pluripotent stem cells	
+keratinocytes	47010		keratinocytes	
+NHEK	63595		keratynocites	
+HRE	52838		kidney	
+HRPEpiC	52020		kidney	
+RPTEC	52669		kidney	
+Leiomyoma cells	387		Leiomyoma cells	
+HL-60	43676		leukemia	
+Jurkat	21489		leukemia	
+Jurkat Trex	607	Jurkat	leukemia	TREATED
+Kasumi-1	2628		leukemia	
+NB4	52828		leukemia	
+RS4	1260		leukemia	
+THP-1	12808		leukemia	
+Dnd41	20518		leukemia	
+Liver	797		Liver	
+BEAS-2B	10083		Lung	
+A549	453798		Lung Cancer	
+Calu-3	1896		Lung Cancer	
+H441	3916		Lung Cancer	
+HCC95	1145		Lung Cancer	
+NCI1703	122	H1703	Lung Cancer	
+NCI-H1819	3113	H1819	Lung Cancer	
+NCI-H2087	5542	H2087	Lung Cancer	
+NCI-H3122	13835	H3122	Lung Cancer	
+NCIH441	381	H441	Lung Cancer	
+NCIH838	1799	H838	Lung Cancer	
+NHLF	40957		lung fibroblasts	
+HCC2157	6036		lymphoblast	
+LCL	1162		Lymphoblastoid cell line	
+OCI-LY1	32938		Lymphoma	
+OCI-LY10	11772		Lymphoma	
+OCI-Ly19	3361		Lymphoma	
+OCI-LY3	8365	OCI-Ly3	Lymphoma	
+OCI-Ly3	1605		Lymphoma	
+OCI-Ly7	17474		Lymphoma	
+Raji	1463		Lymphoma	
+SU-DHL10	784		Lymphoma	
+SU-DHL2	3863		Lymphoma	
+SU-DHL6	4993		Lymphoma	
+U-2932	1878		lymphoma	
+U937	1946		lymphoma	
+Macrophage	25551		Macrophage	
+DAOY	10030		medulloblastoma	
+451Lu	13887		Melanoma	
+melanocytes COLO829	7866	COLO829	Melanoma	
+metastatic prostate cancer tissue	1966		metastatic prostate cancer tissue	
+monocytes	13644		monocytes	
+H929	8881		Myeloma	
+Myoblast	7501		Myoblast	
+myotube	7735		myotube	
+NHDF-neo	51785		neonatal dermal fibroblasts	
+ReN VM	7637	ReNcell VM	neural progenitor	
+Neuroblastoma	15287		Neuroblastoma	
+SHSY5Y	9055		Neuroblastoma	
+SK-N-SH	209791		Neuroblastoma	
+SK-N-SH-RA	51005	SK-N-SH	Neuroblastoma	TREATED
+BE2	50722	SK-N-BE(2)	neuroblastoma 	
+SK-N-MC	10350		Neuroepithelioma	
+Osteoblast	11716		Osteoblast	
+Saos-2	4746		osteosarcoma	
+U2OS	11938		osteosarcoma	
+A2780	137		Ovarian carcinoma	
+Panc1	20143		pancreatic carcinoma	
+PaTu8988S	12909		pancreatic carcinoma	
+PBMCs	12114		Primary Peripheral Blood Mononuclear Cell	
+proerythroblasts	12930		proerythroblasts	
+EP156T	365		Prostate	
+RWPE	6783		Prostate	"NOT SURE ABOUT ASSIGNMENT, WRONG NAME"
+RWPE1	2019		Prostate	
+NCI-H660	541	H660	Prostate Carcinoma	
+VCaP	152377		Prostate Carcinoma	
+22Rv1	714		Prostate Carcinoma	
+22RV1	364	22Rv1	Prostate Carcinoma	
+C4-2B	117		Prostate Carcinoma	
+DU145	51028		Prostate Carcinoma	
+LNCaP	77399		Prostate Carcinoma	
+LNCaP-1F5	11766	LNCaP	Prostate Carcinoma	TREATED
+LNCaP-ARhi	3	LNCaP	Prostate Carcinoma	TREATED
+LNCaP-ARmo	3	LNCaP	Prostate Carcinoma	TREATED
+LNCaP-pcDNA3.1	324	LNCaP	Prostate Carcinoma	TREATED
+LuCaP69	986		Prostate Carcinoma	from bowel
+LuCaP73	229		Prostate Carcinoma	from pelvis
+PC-3	3030		Prostate Carcinoma	
+prostate tumour	4037		Prostate Carcinoma	
+HPAF	56436		pulmonary artery	
+HPF	50899		pulmonary fibroblasts	
+WERI-Rb-1	61494		Retinoblastoma	
+RD	2685		Rhabdomyosarcoma	
+Rhabdomyosarcoma	7255		Rhabdomyosarcoma	
+SGBS	11600		Simpson-Golabi-Behmel syndrome preadipocyte cell	
+HSMM	10147		skeletal muscle	
+HSMMtube	10794		skeletal muscle	SUBTYPE of HSMM
+SAEC	65072		small airway epithelial cell	
+Tfh	6174		T follicular helper	
+H9	24783		T lymphocyte	
+TT	4843		thyroid carcinoma	
+HUVEC	92038		umbilical vein	
+HVMF	46284		villous mesenchymal fibroblast	
+xenograft cells	5301		xenograft cells	
