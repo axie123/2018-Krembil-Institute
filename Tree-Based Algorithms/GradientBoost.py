@@ -1,3 +1,5 @@
+# This code is created and modified by Andy Xie and Tomas Tokar at Krembil in 2018.
+
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
@@ -7,7 +9,7 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_predict
 import matplotlib.pyplot as plt
-'''
+
 d1 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'final_db_standardized.txt', sep = '\t', low_memory = False))
 d2 = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\MI'+'\\'+'training_validated_interactions.txt', sep = '\t', low_memory = False))
 
@@ -31,7 +33,7 @@ y = ml_file.Validated
 binr = preprocessing.LabelBinarizer()
 binr.fit(y)
 y = binr.transform(y)
-'''
+
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = 0.3, random_state = 1)
 
 bag = GradientBoostingRegressor(n_estimators = 200,max_depth = 200, random_state = 1)
@@ -55,10 +57,9 @@ for i in idx:
     # Add to list
     f1_score.append(f1)
 
-# Pack togethe rinto data frame
+# Pack together into data frame
 
 res = pd.DataFrame({'N': idx, 'F_score' : f1_score})
-#res2 = pd.DataFrame({'N': idxx, 'F_score2' : f1_score2})
 def calc_fscore(b):
     # Predicted positives and negatives
     ppos = X_test.index[b == 1.] #//
@@ -78,16 +79,11 @@ def calc_fscore(b):
 
 res_univariate = pd.DataFrame({'N' : np.log10(X_test.sum(axis = 0)), 'F_score' : X_test.apply(calc_fscore)})
 res_univariate = res_univariate.dropna()
-#res_univariate2 = pd.DataFrame({'N' : np.log10(X_test2.sum(axis = 0)), 'F_score' : X_test2.apply(calc_fscore2)})
-#res_univariate2 = res_univariate2.dropna()
 
 # Plot results
 plt.plot(res_univariate.N, res_univariate.F_score, 'go')
-#plt.plot(res_univariate2.N, res_univariate2.F_score, 'ko')
 plt.plot(res.N, res.F_score, 'bo')
 plt.plot(res.N, res.F_score, 'r--')
-#plt.plot(res2.N, res2.F_score2, 'bo')
-#plt.plot(res2.N, res2.F_score2, 'y--')
 plt.xlabel('N [log10]')
 plt.ylabel('F1 score')
 plt.show()
