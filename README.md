@@ -11,10 +11,10 @@ The lab work was done with Python v2.7. The Numpy, Pandas, and Scikit-Learn libr
 
 This repository has three branches:
 
-<h3> master <h3>
+### <h3> master <h3>
   
 This branch contains the linear and tree-based models, as well as the files that contain the data used for the models. The proof-of-concept graphs produced which plotted the models with the experiments are also given in a .zip file. 
 
 The papers used as background research is also given the 'source' file.
 
-<h3> mapping and pivoting <h3>
+### <h3> mapping and pivoting <h3>
