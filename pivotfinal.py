@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-dtf = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\Database 1\Final' + '\\' + 'fdcf.txt', sep = '\t', low_memory = False))
+dtf = pd.DataFrame(pd.read_csv('C:\Users' + '\\' + 'fdcf.txt', sep = '\t', low_memory = False))
 dtf['Validation'] = np.ones((len(dtf),1))
 dtff = pd.DataFrame(dtf['Factor'])
 dtff['Gene Name'] = dtf['Gene Name']
