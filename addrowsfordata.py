@@ -1,18 +1,6 @@
 import pandas as pd
 import numpy as np
 
-data1 = {'a': [1,2,3,4,5],
-         'b': [5,6,7,8,9],
-         'c': [9,10,11,12,13],
-         'd': [9,10,11,12,13],
-         'e': [9,10,11,12,13]}
-data2 = {'a': [1,2,3,4,5],
-         'b': [5,6,7,8,9],
-         'c': [9,10,11,12,13],
-         'd': [9,10,11,12,13],
-         'e': [9,10,11,12,13]}
-
-
 def rowmerge(data1,data2):
     frames = []
     dataset1 = pd.DataFrame(data1)
@@ -61,7 +49,6 @@ def getrows(data):
         newrows = [dataset[j:j+1]]
     return(newrows)
 
-'''
 lista = []
 for i in os.listdir('C:\Users\Andy Xie\Documents\Work\Research\Databases\Final')[2:0]:
     print(i)
@@ -85,7 +72,7 @@ def getrows(new_dict):
     for i in new_dict:
         newrows += [new_dict[i]]
     return(newrows)
-'''    
+
       
         
 
