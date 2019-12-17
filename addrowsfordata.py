@@ -72,7 +72,3 @@ def getrows(new_dict):
     for i in new_dict:
         newrows += [new_dict[i]]
     return(newrows)
-
-      
-        
-
