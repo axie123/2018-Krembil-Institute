@@ -25,24 +25,3 @@ final['Cell line/Tissue'] = final['Cell line/Tissue'].map(dictn)
 final = final.dropna(subset = ['Cell line/Tissue'])
 
 final.to_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\Database 1\Final' + "\\" + 'final_db_cleaned_final.txt', sep = '\t')
-
-'''
-file1 = file1.assign(A = file1[0], B = file1[1], C = file1[2], D = file1[3], E = file1[4])
-
-data = pd.DataFrame(raw_list)
-data['Entry.correct'] = correct_list
-
-big_file = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\Database 1' + '\\' + 'testingfile.txt',sep = '\t',low_memory=False))
-b = expand(big_file)
-print(b)
-
-big_file = pd.DataFrame(pd.read_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\Database 1\Final' + '\\' + 'final_db.txt',sep = '\t',low_memory=False))
-f = big_file['Software']
-f.to_csv('C:\Users\Andy Xie\Documents\Work\Research\Databases\Database 1' + "\\" + 'testingfile.txt', sep = '\t')
-
-d = {'a':[1,[2,5],3,4],
-     'b':[1,2,3,4],
-     'c':[1,2,3,4]}
-
-df = pd.DataFrame(d)
-'''
